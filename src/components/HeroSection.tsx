@@ -19,7 +19,7 @@ const HeroSection = () => {
       });
 
       return () => {
-        typed.destroy();
+        typed?.destroy();
       };
     }
   }, []);
@@ -46,7 +46,7 @@ const HeroSection = () => {
                 Get Started
               </Link>
               <Link
-                to="/about"
+                to="/career"
                 className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#FF6B6B] border-2 border-[#FF6B6B] rounded-lg font-body font-semibold text-base sm:text-lg hover:bg-[#FF6B6B] hover:text-white transition-colors text-center"
               >
                 View Open Positions

@@ -173,3 +173,71 @@ export const teamMembersData: TeamMemberData[] = [
   },
 ];
 
+export interface JobListingData {
+  id: number;
+  title: string;
+  department: string;
+  location: string;
+  jobType: string;
+  description: string;
+  aboutRole?: string;
+  keyResponsibilities?: string[];
+  qualifications?: string[];
+}
+
+export const jobListingsData: JobListingData[] = [
+  {
+    id: 1,
+    title: 'Senior Frontend Developer',
+    department: 'Engineering',
+    location: 'New York, NY',
+    jobType: 'Full-time',
+    description: 'We are seeking a talented Senior Frontend Developer to build and maintain our next-generation user interfaces using modern frameworks like React and Vue.js.',
+    aboutRole: 'As a Senior Frontend Developer, you will play a crucial role in shaping the user experience of our flagship products. You will collaborate with designers and backend engineers to translate complex requirements into beautiful, functional, and accessible user interfaces.',
+    keyResponsibilities: [
+      'Develop and maintain web applications using React, TypeScript, and Tailwind CSS.',
+      'Ensure the technical feasibility of UI/UX designs.',
+      'Optimize applications for maximum speed and scalability.',
+      'Mentor junior developers and contribute to our engineering culture.',
+    ],
+    qualifications: [
+      '5+ years of experience in frontend development.',
+      'Expert knowledge of JavaScript, HTML5, and CSS3.',
+      'Strong proficiency with React or a similar modern framework.',
+      'Experience with state management libraries like Redux or Zustand.',
+    ],
+  },
+  {
+    id: 2,
+    title: 'Product Designer (UX/UI)',
+    department: 'Design',
+    location: 'Remote',
+    jobType: 'Full-time',
+    description: 'Join our design team to create intuitive and beautiful user experiences for our core products. You will be responsible for the entire design process from research to high-fidelity mockups. This role requires a strong portfolio demonstrating expertise in user-centered design, wireframing, prototyping, and visual design. You will collaborate with product managers, engineers, and stakeholders to translate user needs into elegant design solutions. Additionally, you will conduct user research, create design systems, and ensure consistency across all product touchpoints while staying up-to-date with the latest design trends and tools.',
+  },
+  {
+    id: 3,
+    title: 'Marketing Manager',
+    department: 'Marketing',
+    location: 'London, UK',
+    jobType: 'Contract',
+    description: "We're looking for an experienced Marketing Manager to lead our go-to-market strategy, manage campaigns, and drive growth for our new product line in the EMEA region. You will be responsible for developing and executing comprehensive marketing plans, managing budgets, analyzing campaign performance, and working with cross-functional teams to ensure brand consistency and market penetration. The ideal candidate has 7+ years of marketing experience with a proven track record in B2B SaaS marketing. You will oversee digital marketing channels, content creation, event planning, and work closely with sales teams to generate qualified leads and drive revenue growth.",
+  },
+  {
+    id: 4,
+    title: 'Marketing Manager',
+    department: 'Marketing',
+    location: 'London, UK',
+    jobType: 'Contract',
+    description: "We're looking for an experienced Marketing Manager to lead our go-to-market strategy, manage campaigns, and drive growth for our new product line in the EMEA region. You will be responsible for developing and executing comprehensive marketing plans, managing budgets, analyzing campaign performance, and working with cross-functional teams to ensure brand consistency and market penetration. The ideal candidate has 7+ years of marketing experience with a proven track record in B2B SaaS marketing. You will oversee digital marketing channels, content creation, event planning, and work closely with sales teams to generate qualified leads and drive revenue growth.",
+  },
+  {
+    id: 5,
+    title: 'Marketing Manager',
+    department: 'Marketing',
+    location: 'London, UK',
+    jobType: 'Contract',
+    description: "We're looking for an experienced Marketing Manager to lead our go-to-market strategy, manage campaigns, and drive growth for our new product line in the EMEA region. You will be responsible for developing and executing comprehensive marketing plans, managing budgets, analyzing campaign performance, and working with cross-functional teams to ensure brand consistency and market penetration. The ideal candidate has 7+ years of marketing experience with a proven track record in B2B SaaS marketing. You will oversee digital marketing channels, content creation, event planning, and work closely with sales teams to generate qualified leads and drive revenue growth.",
+  },
+];
+
