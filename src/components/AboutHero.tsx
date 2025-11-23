@@ -8,7 +8,7 @@ const AboutHero = () => {
       <div
         className="relative min-h-[500px] sm:min-h-[600px] lg:min-h-[700px] bg-cover bg-center bg-no-repeat rounded-2xl mx-4 sm:mx-6 lg:mx-8 my-8 sm:my-12 lg:my-16"
         style={{
-          backgroundImage: `url(${aboutHeroData.backgroundImage})`,
+          backgroundImage: `url(${aboutHeroData?.backgroundImage})`,
         }}
       >
         {/* Dark Overlay */}
@@ -20,16 +20,16 @@ const AboutHero = () => {
         {/* Content Overlay */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[500px] sm:min-h-[600px] lg:min-h-[700px] px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 sm:mb-6">
-            {aboutHeroData.title}
+            {aboutHeroData?.title}
           </h1>
           <p className="text-base sm:text-lg lg:text-xl font-body text-white/90 max-w-3xl mb-6 sm:mb-8">
-            {aboutHeroData.subtitle}
+            {aboutHeroData?.subtitle}
           </p>
           <Link
             to="/about"
             className="px-8 py-3 sm:py-4 bg-[#FF6B6B] text-white rounded-lg font-body font-semibold text-base sm:text-lg hover:bg-[#FF5555] transition-colors"
           >
-            {aboutHeroData.buttonText}
+            {aboutHeroData?.buttonText}
           </Link>
         </div>
       </div>

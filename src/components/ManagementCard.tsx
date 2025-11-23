@@ -8,7 +8,7 @@ interface ManagementCardProps {
 }
 
 const ManagementCard = ({ card, index = 0 }: ManagementCardProps) => {
-  const cardData = card || managementCardsData[index];
+  const cardData = card ?? managementCardsData?.[index];
 
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -70,13 +70,13 @@ const ManagementCard = ({ card, index = 0 }: ManagementCardProps) => {
         whileHover="hover"
         custom={index}
       >
-        {cardData.icon}
+        {cardData?.icon}
       </motion.div>
       <h3 className="text-xl font-subheading font-bold text-gray-800 mb-2">
-        {cardData.title}
+        {cardData?.title}
       </h3>
       <p className="text-base font-body text-gray-600">
-        {cardData.description}
+        {cardData?.description}
       </p>
     </motion.div>
   );
@@ -87,8 +87,8 @@ export const ManagementCards = () => {
     <div className="bg-gray-50 py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {managementCardsData.map((card, index) => (
-            <ManagementCard key={card.id} card={card} index={index} />
+          {managementCardsData?.map((card, index) => (
+            <ManagementCard key={card?.id} card={card} index={index} />
           ))}
         </div>
       </div>

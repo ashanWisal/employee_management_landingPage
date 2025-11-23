@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,11 +9,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link to="/" className="text-xl sm:text-2xl font-heading font-bold text-gray-900">
-              Employee Management
+            <Link
+              to="/"
+              className="text-xl sm:text-2xl font-heading font-bold text-gray-900"
+            >
+              Workforce Hub
             </Link>
           </div>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-4">
             <Link
@@ -27,6 +30,12 @@ const Navbar = () => {
               className="font-body text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               About Us
+            </Link>
+            <Link
+              to="/career"
+              className="font-body text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+            >
+              Career
             </Link>
             <Link
               to="/signup"
@@ -76,6 +85,13 @@ const Navbar = () => {
               className="block font-body text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium transition-colors"
             >
               About Us
+            </Link>
+            <Link
+              to="/career"
+              onClick={() => setIsMenuOpen(false)}
+              className="block font-body text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium transition-colors"
+            >
+              Career
             </Link>
             <Link
               to="/signup"

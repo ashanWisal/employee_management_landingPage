@@ -40,13 +40,13 @@ const PrincipleCard = ({ principle, index }: PrincipleCardProps) => {
     >
       <div className="flex flex-col items-center text-center">
         <div className="mb-4">
-          {principle.icon}
+          {principle?.icon}
         </div>
         <h3 className="text-xl sm:text-2xl font-subheading font-bold text-[#607AFB] mb-3">
-          {principle.title}
+          {principle?.title}
         </h3>
         <p className="text-base sm:text-lg font-body text-gray-700">
-          {principle.description}
+          {principle?.description}
         </p>
       </div>
     </motion.div>
@@ -62,8 +62,8 @@ const Guide = () => {
         </h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          {principlesData.map((principle, index) => (
-            <PrincipleCard key={principle.id} principle={principle} index={index} />
+          {principlesData?.map((principle, index) => (
+            <PrincipleCard key={principle?.id} principle={principle} index={index} />
           ))}
         </div>
       </div>
